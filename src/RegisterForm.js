@@ -20,38 +20,36 @@ function RegisterForm({ onClose }) {
       Your account does not have access to PCDC data.
       <br />
       Please register to gain access.
-      <div>
-        <label>
-          <span>First name</span>
-          <input
-            type="text"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-        </label>
-        <label>
-          <span>Last name</span>
-          <input
-            type="text"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-          />
-        </label>
-        <label>
-          <span>Affiliaton</span>
-          <select
-            value={affiliation}
-            onChange={(e) => setAffiliation(e.target.value)}
-          >
-            <option value="">Select...</option>
-            {affiliationOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
+      <label>
+        <span>First name</span>
+        <input
+          type="text"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+      </label>
+      <label>
+        <span>Last name</span>
+        <input
+          type="text"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+        />
+      </label>
+      <label>
+        <span>Affiliaton</span>
+        <select
+          value={affiliation}
+          onChange={(e) => setAffiliation(e.target.value)}
+        >
+          <option value="">Select...</option>
+          {affiliationOptions.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </label>
     </div>
   );
 
