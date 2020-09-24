@@ -100,8 +100,11 @@ function RegisterForm({ onClose }) {
         affiliation.
       </p>
       <p>
-        Please subscribe to the quarterly PCDC newsletter to get the latest
-        updates on the PCDC project and more.
+        Please{" "}
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          subscribe to the quarterly PCDC newsletter
+        </a>{" "}
+        to get the latest updates on the PCDC project and more.
       </p>
     </div>
   );
